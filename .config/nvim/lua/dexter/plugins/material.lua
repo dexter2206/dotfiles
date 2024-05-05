@@ -1,3 +1,1 @@
-return { 'marko-cerovac/material.nvim'}
-
-
+return { "marko-cerovac/material.nvim" }
