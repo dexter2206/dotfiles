@@ -109,10 +109,8 @@ return {
 
                     local orig_execute_command = vim.lsp.buf.execute_command
                     vim.lsp.buf.execute_command = function(command)
-                        print("chuj")
                         local arg = command.arguments[1]
                         if command.command == '_ltex.addToDictionary' then
-                            print("chuj")
                             do_command(arg.words, 'dictionary')
                         elseif command.command == '_ltex.disableRules' then
                             do_command(arg.ruleIds, 'disabledRules')
@@ -142,7 +140,6 @@ return {
                     end
 
                     M.filetypes = {"markdown", "text", "latex"}
-                    print(vim.inspect(M))
                     require("lspconfig").ltex.setup(
                     M
                     )
