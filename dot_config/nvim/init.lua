@@ -47,3 +47,6 @@ vim.wo.relativenumber = true
 vim.opt.spellfile = vim.fn.expand("~/.config/nvim/spell/en.utf-8.add")
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+
+-- Diagnostics
+vim.diagnostic.config { virtual_text = false, signs = true }

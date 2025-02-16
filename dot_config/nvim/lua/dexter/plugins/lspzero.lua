@@ -28,8 +28,7 @@ return {
 			},
 			handlers = {
 				lsp_zero.default_setup,
-					require("lspconfig").basedpyright.setup({})
-				end,
+				require("lspconfig").basedpyright.setup({})
 			},
 		})
 	end,

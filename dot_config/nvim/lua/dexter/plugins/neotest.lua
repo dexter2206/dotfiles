@@ -22,9 +22,6 @@ return {
 					runner = "pytest",
 					args = { "-vv" },
 					pytest_discover_instances = true,
-					python = function()
-						return require("venv-selector").get_active_path()
-					end,
 				}),
 			},
 			summary = {
